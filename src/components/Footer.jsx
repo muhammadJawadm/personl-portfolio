@@ -30,7 +30,7 @@ export default function Footer() {
                             marginBottom: 6,
                         }}>MJ.dev</div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.82rem' }}>
-                            © 2024 Muhammad Jawad. All rights reserved.
+                            © 2025 Muhammad Jawad. All rights reserved.
                         </p>
                     </div>
 

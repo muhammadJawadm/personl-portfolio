@@ -250,13 +250,16 @@ export default function About() {
                         </motion.div>
 
                         <motion.div variants={itemVariants}>
-                            <motion.button
+                            <motion.a
+                                href="/Muhammad_Jawad_Resume.pdf"
+                                download="Muhammad_Jawad_Resume.pdf"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.97 }}
                                 className="btn-primary"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}
                             >
                                 <FiDownload /> Download Resume
-                            </motion.button>
+                            </motion.a>
                         </motion.div>
                     </motion.div>
                 </div>

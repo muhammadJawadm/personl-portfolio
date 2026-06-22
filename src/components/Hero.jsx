@@ -154,8 +154,8 @@ export default function Hero() {
                     <motion.div variants={itemVariants} style={{ display: 'flex', gap: 32, marginTop: 48 }}>
                         {[
                             { value: '2+', label: 'Years Exp.' },
-                            { value: '8+', label: 'Projects' },
-                            { value: '1M+', label: 'Users Served' },
+                            { value: '10+', label: 'Projects' },
+                            { value: '15K+', label: 'Users Served' },
                         ].map((stat) => (
                             <div key={stat.label}>
                                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.8rem', fontWeight: 800, color: 'var(--accent-cyan)' }}>{stat.value}</div>

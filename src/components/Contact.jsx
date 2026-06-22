@@ -17,8 +17,11 @@ export default function Contact() {
     const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
     const handleSubmit = e => {
         e.preventDefault()
+        const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`)
+        const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`)
+        window.open(`mailto:muhammadjawadkanyal@gmail.com?subject=${subject}&body=${body}`, '_blank')
         setSent(true)
-        setTimeout(() => setSent(false), 3500)
+        setTimeout(() => setSent(false), 4000)
         setForm({ name: '', email: '', message: '' })
     }
 
@@ -128,7 +131,7 @@ export default function Contact() {
                                     className="btn-primary"
                                     style={{ justifyContent: 'center', fontSize: '0.95rem', padding: '14px 0', borderRadius: 12 }}
                                 >
-                                    {sent ? '✅ Message Sent!' : <><FiSend /> Initiate Conversation</>}
+                                    {sent ? '✅ Email Client Opened!' : <><FiSend /> Send Message</>}
                                 </motion.button>
                             </form>
                         </div>
