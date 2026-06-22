@@ -158,6 +158,10 @@ export default function About() {
                         animate={inView ? 'visible' : 'hidden'}
                     >
                         <motion.div variants={itemVariants}>
+                            <div className="section-badge">
+                                <span className="section-badge-dot" />
+                                About Me
+                            </div>
                             <h2 className="section-title">
                                 The <span style={{
                                     background: 'linear-gradient(135deg, #00d4ff, #0ea5e9)',
@@ -170,20 +174,20 @@ export default function About() {
 
                         <motion.p variants={itemVariants} style={{
                             color: 'var(--text-secondary)',
-                            lineHeight: 1.8,
-                            fontSize: '0.98rem',
-                            marginBottom: 28,
+                            lineHeight: 1.85,
+                            fontSize: '1rem',
+                            marginBottom: 20,
                         }}>
-                            I am a passionate Full Stack Developer with over 2+ years of experience in crafting scalable web applications. My proven combination of technical excellence with a deep understanding of user psychology lets me create interfaces that at smart just for clients but immersive.
+                            I'm a passionate Full Stack Developer with 2+ years of experience crafting scalable web applications. Based in Islamabad and working globally — I combine deep technical skill with an eye for design to build products that feel as good as they perform.
                         </motion.p>
 
                         <motion.p variants={itemVariants} style={{
                             color: 'var(--text-secondary)',
-                            lineHeight: 1.8,
-                            fontSize: '0.98rem',
+                            lineHeight: 1.85,
+                            fontSize: '1rem',
                             marginBottom: 32,
                         }}>
-                            Specialized in modern JavaScript ecosystems, cloud infrastructure, and performance optimization. I transform complex business requirements into elegant, high-performance applications that scale.
+                            Specialized in modern JavaScript ecosystems, cloud infrastructure, and real-time systems. I transform complex business requirements into elegant, high-performance applications that scale — from startup MVPs to production platforms serving thousands of users.
                         </motion.p>
 
                         {/* Tech stack */}

@@ -141,6 +141,10 @@ export default function Skills() {
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6 }}
                         >
+                            <div className="section-badge">
+                                <span className="section-badge-dot" />
+                                Skills
+                            </div>
                             <h2 className="section-title">Technical Proficiency</h2>
                             <p className="section-subtitle">
                                 My core competencies and areas of expertise
@@ -188,6 +192,10 @@ export default function Skills() {
                             animate={inView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.15 }}
                         >
+                            <div className="section-badge" style={{ borderColor: 'rgba(124,58,237,0.25)', background: 'rgba(124,58,237,0.07)', color: '#a78bfa' }}>
+                                <span className="section-badge-dot" style={{ background: '#a78bfa', boxShadow: '0 0 6px #a78bfa' }} />
+                                Highlights
+                            </div>
                             <h2 className="section-title">Tech Highlights</h2>
                             <p className="section-subtitle">What I bring to the table</p>
                         </motion.div>
@@ -222,8 +230,8 @@ export default function Skills() {
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: 4 }}>{item.title}</div>
-                                        <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>{item.desc}</div>
+                                        <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-primary)', marginBottom: 5 }}>{item.title}</div>
+                                        <div style={{ fontSize: '0.83rem', color: 'var(--text-secondary)', lineHeight: 1.65 }}>{item.desc}</div>
                                     </div>
                                 </motion.div>
                             ))}

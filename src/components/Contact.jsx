@@ -47,6 +47,10 @@ export default function Contact() {
                     transition={{ duration: 0.6 }}
                     style={{ marginBottom: 52 }}
                 >
+                    <div className="section-badge">
+                        <span className="section-badge-dot" />
+                        Get In Touch
+                    </div>
                     <h2 className="section-title">Let's Work Together</h2>
                     <p className="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
                 </motion.div>
@@ -73,8 +77,8 @@ export default function Contact() {
                                 marginBottom: 8,
                                 color: 'var(--text-primary)',
                             }}>Send a Message</h3>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginBottom: 28, lineHeight: 1.6 }}>
-                                Let's see how we can do something amazing and help each other grow.
+                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', marginBottom: 28, lineHeight: 1.65 }}>
+                                Fill in your details below and I'll get back to you as soon as possible.
                             </p>
 
                             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -283,7 +287,7 @@ export default function Contact() {
                                     }}
                                 />
                             </div>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: 12, textAlign: 'center' }}>
+                            <p style={{ color: 'var(--text-secondary)', fontSize: '0.82rem', marginTop: 12, textAlign: 'center' }}>
                                 Open to remote work worldwide
                             </p>
                         </div>

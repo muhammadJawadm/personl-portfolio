@@ -48,6 +48,10 @@ export default function Education() {
                     transition={{ duration: 0.6 }}
                     style={{ marginBottom: 52 }}
                 >
+                    <div className="section-badge">
+                        <span className="section-badge-dot" />
+                        Education
+                    </div>
                     <h2 className="section-title">Education &amp; Certifications</h2>
                     <p className="section-subtitle">Academic background and professional credentials</p>
                 </motion.div>

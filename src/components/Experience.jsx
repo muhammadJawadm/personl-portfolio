@@ -57,6 +57,10 @@ export default function Experience() {
                     transition={{ duration: 0.6 }}
                     style={{ marginBottom: 52 }}
                 >
+                    <div className="section-badge">
+                        <span className="section-badge-dot" />
+                        Experience
+                    </div>
                     <h2 className="section-title">Professional Experience</h2>
                     <p className="section-subtitle">My journey of building impactful products</p>
                 </motion.div>
@@ -179,7 +183,7 @@ export default function Experience() {
                                         </div>
                                     </div>
 
-                                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.88rem', lineHeight: 1.7, marginBottom: 16, marginTop: 12 }}>
+                                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', lineHeight: 1.75, marginBottom: 16, marginTop: 12 }}>
                                         {exp.description}
                                     </p>
 

@@ -159,6 +159,10 @@ export default function Projects() {
                         animate={inView ? { opacity: 1, y: 0 } : {}}
                         transition={{ duration: 0.6 }}
                     >
+                        <div className="section-badge">
+                            <span className="section-badge-dot" />
+                            My Work
+                        </div>
                         <h2 className="section-title">Featured Projects</h2>
                         <p className="section-subtitle" style={{ marginBottom: 0 }}>
                             Real products I designed, built, and shipped — live on the web.
@@ -347,9 +351,9 @@ export default function Projects() {
                                         lineHeight: 1.3,
                                     }}>{project.title}</h3>
                                     <p style={{
-                                        color: 'var(--text-muted)',
-                                        fontSize: '0.82rem',
-                                        lineHeight: 1.65,
+                                        color: 'var(--text-secondary)',
+                                        fontSize: '0.83rem',
+                                        lineHeight: 1.7,
                                         marginBottom: 14,
                                     }}>{project.description}</p>
 
@@ -358,8 +362,8 @@ export default function Projects() {
                                         {project.tech.map(t => (
                                             <span key={t} style={{
                                                 padding: '3px 9px',
-                                                background: 'rgba(255,255,255,0.04)',
-                                                border: '1px solid rgba(255,255,255,0.07)',
+                                                background: 'rgba(255,255,255,0.06)',
+                                                border: '1px solid rgba(255,255,255,0.1)',
                                                 borderRadius: 50,
                                                 fontSize: '0.7rem',
                                                 color: 'var(--text-muted)',
